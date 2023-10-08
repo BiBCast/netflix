@@ -1,6 +1,6 @@
 .logic__language {
   display: flex;
-  border: 1px solid white;
+  border: 1px solid gray;
   position: relative;
   justify-content: space-between;
   align-items: center;

@@ -1,9 +1,11 @@
 import { CSSProperties, useState } from "react";
 import "./home.css";
+import { RightArrow } from "../assets/RightArrow";
 export function Home() {
   const [InputHaveFocus, setInputHaveFocus] = useState(false);
   const styleButton = {
-    top: InputHaveFocus ? "0%" : "30%",
+    top: InputHaveFocus ? "0%" : "20%",
+    fontSize: InputHaveFocus ? "1rem" : "1.3rem",
   } as CSSProperties;
 
   return (
@@ -33,7 +35,9 @@ export function Home() {
           />
         </div>
         <div className="container__button">
-          <button>button</button>
+          <button>
+            Inizia <RightArrow />
+          </button>
         </div>
       </div>
     </div>

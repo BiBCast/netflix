@@ -30,7 +30,7 @@
   justify-content: start;
   align-items: center;
   & > a {
-    color: blue;
+    color: #448ef4;
     text-decoration: underline;
   }
   & svg {
@@ -38,6 +38,6 @@
     align-items: center;
   }
   & path {
-    fill: blue;
+    fill: #448ef4;
   }
 }

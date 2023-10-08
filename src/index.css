@@ -4,14 +4,65 @@
 * {
   margin: 0;
   padding: 0;
+  letter-spacing: 0 !important;
 }
 @font-face {
   font-family: "Netflix Sans";
-  font-weight: 500;
+  font-weight: 100;
   font-display: optional;
   src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
       format("woff2"),
     url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 300;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 400;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 700;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 800;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 900;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
       format("woff");
 }
 
@@ -71,11 +122,14 @@ body {
   & .logic__signin {
     background: rgb(229, 9, 20);
     padding: 0.4rem 1rem;
+
     color: inherit;
     border: none;
     border-radius: 5px;
     font-size: 0.875rem;
-    font-weight: 500;
+    ;
+    font-weight: 600;
+    line-height: 1;
     &:hover {
       transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
       background: rgb(193, 17, 25);

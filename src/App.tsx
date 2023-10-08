@@ -4,13 +4,13 @@ import { CardFaq } from "./components/CardFaq";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Home } from "./components/Home/Home";
-import fronPage from "./components/assets/fronPage.jpg";
+import frontPage from "./components/assets/frontPage.jpg";
 import "./index.css";
 function App() {
   return (
     <>
       <div className="front_page">
-        <img src={fronPage} />
+        <img src={frontPage} />
         <Header />
         <Home />
       </div>

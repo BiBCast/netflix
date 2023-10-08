@@ -5,11 +5,13 @@
   align-items: center;
   height: 77vh;
   gap: 1rem;
+  background: rgb(0 0 0 / 40%);
 }
 h1 {
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
+  width: 70%;
 }
 h3 {
   font-size: 1.5rem;
@@ -29,19 +31,21 @@ h3 {
   padding-inline: 1rem;
   justify-content: start;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid grey;
   width: 25%;
   height: 3.5rem;
+  border-radius: 5px;
 }
 .container__input > label {
   position: absolute;
-  color: white;
+  color: gray;
 }
 .container__input > input {
   position: relative;
   background: transparent;
   border: none;
   color: white;
+  font-size: large;
   width: 100%;
   height: 50%;
 }
@@ -53,12 +57,21 @@ h3 {
   background: rgb(229, 9, 20);
   padding: 0.4rem 1rem;
   color: inherit;
+  height: 3.5rem;
+  aspect-ratio: 2.5/1;
   border: none;
   border-radius: 5px;
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
     background: rgb(193, 17, 25);
+  }
+  & svg {
+    display: flex;
+    align-items: center;
   }
 }
