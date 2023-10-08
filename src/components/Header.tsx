@@ -7,7 +7,7 @@ export function Header() {
       <div>
         <Logo />
         <div className="header__logic">
-          <Select/>
+          <Select />
           <button className="logic__signin" type="button">
             Sign in
           </button>
