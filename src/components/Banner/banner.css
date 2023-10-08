@@ -1,3 +1,43 @@
 .banner {
   color: black;
+  height: 10rem;
+  display: flex;
+  gap: 1rem;
+  background: radial-gradient(
+    51.39% 511.66% at 47.68% -217.91%,
+    #ff9900 0%,
+    #e50914 17.27%,
+    #0e1b4f 79.44%,
+    #000413 100%
+  );
+  justify-content: center;
+  align-items: center;
+}
+.banner__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  & > * {
+    width: 100%;
+  }
+}
+
+.texts__link {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  & > a {
+    color: blue;
+    text-decoration: underline;
+  }
+  & svg {
+    display: flex;
+    align-items: center;
+  }
+  & path {
+    fill: blue;
+  }
 }

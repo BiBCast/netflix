@@ -13,8 +13,8 @@ function App() {
         <img src={fronPage} />
         <Header />
         <Home />
-        <Banner />
       </div>
+      <Banner />
       <Card />
       <Card />
       <Card />
