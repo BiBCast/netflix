@@ -1,22 +1,21 @@
-import { CSSProperties, useState } from "react";
+import { useState } from "react";
 import "./cardFaqElement.css";
 import { Plus } from "../assets/Plus";
 import { X } from "../assets/X";
 export function CardFaqElement() {
   const [isShow, setIsShow] = useState(false);
-  const styleExpand = {
-    height: isShow ? "100%" : "0px",
-  } as CSSProperties;
+  const classExpand = isShow ? "ct__expand ct__expanded" : "ct__expand";
+
   return (
-    <>
+    <div className="ct__container">
       <div className="ct">
         <button
           className="ct__title"
           onClick={() => setIsShow((prev) => !prev)}
         >
-          <h3>Cosè Netflix </h3> {isShow ? <X /> : <Plus />}
+          <h3>Cos'è Netflix </h3> {isShow ? <X /> : <Plus />}
         </button>
-        <div className="ct__expand" style={styleExpand}>
+        <div className={classExpand}>
           <p>
             Netflix è un servizio di streaming che offre una varietà di serie
             TV, film, documentari pluripremiati e tanto altro su una vasta gamma
@@ -29,7 +28,7 @@ export function CardFaqElement() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

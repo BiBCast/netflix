@@ -1,3 +1,7 @@
+.ct__container {
+  width: 80%;
+}
+
 .ct {
   background: black;
   overflow: hidden;
@@ -10,7 +14,6 @@
 .ct__title {
   width: 100%;
   height: fit-content;
-  width: 79%;
   padding: 1.5rem;
   overflow: hidden;
   background: rgb(45, 45, 45);
@@ -27,14 +30,29 @@
 }
 
 .ct__expand {
-  width: 79%;
+  --transition-duration: 300ms;
   overflow: hidden;
+  display: grid;
   background: rgb(45, 45, 45);
-  height: fit-content;
-  transition: all 1s ease-in-out;
+  transition: grid-template-rows var(--transition-duration) ease-in-out;
+  grid-template-rows: 0fr;
+
   & > p {
-    padding: 1.5rem;
+    transition: padding-top var(--transition-duration) ease-in-out,
+      padding-bottom var(--transition-duration) ease-in-out;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: hidden;
     font-size: 1.5rem;
     font-weight: 400;
+  }
+}
+
+.ct__expanded {
+  grid-template-rows: 1fr;
+
+  & > p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }

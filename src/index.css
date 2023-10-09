@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   letter-spacing: 0 !important;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: "Netflix Sans";
