@@ -1,6 +1,6 @@
 import { Banner } from "./components/Banner/Banner";
 import { Card } from "./components/Card/Card";
-import { CardFaq } from "./components/CardFaq";
+import { CardFaq } from "./components/CardFaq/CardFaq";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Home } from "./components/Home/Home";
@@ -68,8 +68,8 @@ function App() {
         }}
       />
       <Separetor />
-
       <CardFaq />
+      <Separetor />
       <Footer />
     </>
   );
