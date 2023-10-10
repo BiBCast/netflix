@@ -6,7 +6,7 @@ import { Header } from "./components/Header/Header";
 import { Home } from "./components/Home/Home";
 
 import "./index.css";
-import { Separetor } from "./components/Separetor/Separetor";
+import { Separator } from "./components/Separator/Separator";
 export type CardContent = {
   title: string;
   paragraf: string;
@@ -31,7 +31,7 @@ function App() {
           img: "/tv.png",
         }}
       />
-      <Separetor />
+      <Separator />
       <Card
         CardContent={{
           title: "Guarda Netflix ovunque",
@@ -41,7 +41,7 @@ function App() {
           img: "device-pile.png",
         }}
       />
-      <Separetor />
+      <Separator />
 
       <Card
         CardContent={{
@@ -52,7 +52,7 @@ function App() {
           img: "/child.png",
         }}
       />
-      <Separetor />
+      <Separator />
 
       <Card
         CardContent={{
@@ -62,9 +62,9 @@ function App() {
           img: "/mobile-0819.jpg",
         }}
       />
-      <Separetor />
+      <Separator />
       <CardFaq />
-      <Separetor />
+      <Separator />
       <Footer />
     </>
   );
