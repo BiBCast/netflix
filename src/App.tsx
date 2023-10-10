@@ -18,7 +18,7 @@ function App() {
     <>
       <div className="front_page">
         <Header />
-        <img src="/frontPage.jpg" />
+        <img src={window.location.href + "/frontPage.jpg"} />
         <Home />
       </div>
       <Banner />
@@ -28,7 +28,7 @@ function App() {
           paragraf:
             "Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.",
           isImageRight: true,
-          img: "/tv.png",
+          img: window.location.href + "/tv.png",
         }}
       />
       <Separator />
@@ -38,7 +38,7 @@ function App() {
           paragraf:
             "Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti.",
           isImageRight: false,
-          img: "device-pile.png",
+          img: window.location.href + "/device-pile.png",
         }}
       />
       <Separator />
@@ -49,7 +49,7 @@ function App() {
           paragraf:
             "I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.",
           isImageRight: true,
-          img: "/child.png",
+          img: window.location.href + "/child.png",
         }}
       />
       <Separator />
@@ -59,7 +59,7 @@ function App() {
           title: "Scarica le tue serie da guardare offline",
           paragraf: "Disponibili solo nei piani senza pubblicità.",
           isImageRight: false,
-          img: "/mobile-0819.jpg",
+          img: window.location.href + "/mobile-0819.jpg",
         }}
       />
       <Separator />
