@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import "./cardFaqElement.css";
 import { Plus } from "../assets/Plus";
 import { X } from "../assets/X";
-export function CardFaqElement() {
+export function CardFaqElement({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
   const [isShow, setIsShow] = useState(false);
   const classExpand = isShow ? "ct__expand ct__expanded" : "ct__expand";
 
@@ -13,19 +19,10 @@ export function CardFaqElement() {
           className="ct__title"
           onClick={() => setIsShow((prev) => !prev)}
         >
-          <h3>Cos'è Netflix </h3> {isShow ? <X /> : <Plus />}
+          <h3>{title}</h3> {isShow ? <X /> : <Plus />}
         </button>
         <div className={classExpand}>
-          <p>
-            Netflix è un servizio di streaming che offre una varietà di serie
-            TV, film, documentari pluripremiati e tanto altro su una vasta gamma
-            di dispositivi connessi a Internet.
-            <br />
-            <br />
-            Guarda quello che vuoi, quando vuoi. Il tutto a una quota mensile
-            ridotta. C'è sempre qualcosa di nuovo da scoprire: aggiungiamo nuovi
-            film e serie TV ogni settimana!
-          </p>
+          <p>{children}</p>
         </div>
       </div>
     </div>

@@ -1,13 +1,6 @@
-import { CSSProperties, useState } from "react";
 import "./home.css";
-import { RightArrow } from "../assets/RightArrow";
+import { EmailButton } from "../EmailButton/EmailButton";
 export function Home() {
-  const [InputHaveFocus, setInputHaveFocus] = useState(false);
-  const styleButton = {
-    top: InputHaveFocus ? "0%" : "20%",
-    fontSize: InputHaveFocus ? "1rem" : "1.3rem",
-  } as CSSProperties;
-
   return (
     <div className="home">
       <h1>
@@ -19,27 +12,7 @@ export function Home() {
         Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o
         riattivare il tuo abbonamento.
       </h3>
-      <div className="home__container">
-        <div className="container__input">
-          <label htmlFor="input" style={styleButton}>
-            Indirizzo email
-          </label>
-          <input
-            id="input"
-            onFocus={(e) =>
-              e.currentTarget.innerText == "" ? setInputHaveFocus(true) : true
-            }
-            onBlur={(e) =>
-              e.target.value == "" ? setInputHaveFocus(false) : true
-            }
-          />
-        </div>
-        <div className="container__button">
-          <button>
-            Inizia <RightArrow />
-          </button>
-        </div>
-      </div>
+      <EmailButton />
     </div>
   );
 }
