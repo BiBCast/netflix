@@ -2,7 +2,7 @@ import { SelectLang } from "../SelectLang/SelectLang";
 import "./footer.css";
 export function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer_title">
         Domande? Chiama <span>800-130-364</span>
       </div>
@@ -40,6 +40,6 @@ export function Footer() {
         <SelectLang />
       </div>
       <div>Netflix Italia</div>
-    </div>
+    </footer>
   );
 }
