@@ -1,27 +1,76 @@
-# React + TypeScript + Vite
+# Netflix React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that showcases Netflix features using various components. It includes a banner, card sections, FAQs, and a footer. Users can learn about Netflix's offerings, such as watching on different devices, creating profiles for kids, and downloading series for offline viewing.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Components](#components)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get started with this project, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository to your local machine:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   ```
+   git clone https://github.com/BiBCast/netflix-react.git
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+
+   ```
+   cd netflix-react
+   ```
+
+3. Install the required dependencies:
+
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```
+   npm run dev
+   ```
+
+5. Open your web browser and go to [http://localhost:5173](http://localhost:5173) to view the application.
+
+## Usage
+
+This React application provides information about Netflix features and how to use the streaming service on different devices. It consists of various components, each with its own purpose:
+
+### Banner
+
+The `Banner` component is responsible for displaying a banner at the top of the page.
+
+### Card
+
+The `Card` component is used to showcase different Netflix features. It takes the following props:
+
+- `title`: A string representing the card's title.
+- `paragraf`: A string containing the card's description.
+- `img`: The URL to an image illustrating the feature.
+- `isImageRight`: A boolean indicating whether the image should be displayed on the right side of the card.
+
+### CardFaq
+
+The `CardFaq` component displays frequently asked questions about Netflix.
+
+### Footer
+
+The `Footer` component is responsible for rendering the page footer.
+
+### Header
+
+The `Header` component renders the header section of the page.
+
+### Home
+
+The `Home` component is not explicitly described but seems to be part of the front page layout.
+
+### Separator
+
+The `Separator` component adds a visual separator between different sections of the page.
