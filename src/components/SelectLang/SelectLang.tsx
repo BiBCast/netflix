@@ -3,7 +3,7 @@ import { LanguageIcon } from "../assets/LanguageIcon";
 import { Options } from "./Options";
 import "./Select.css";
 import { useState } from "react";
-export function Select() {
+export function SelectLang() {
   const [isSelectExpanded, setIsSelectExpanded] = useState(false);
   const [value, setValue] = useState("italiano");
   function handleOption(e: MouseEvent<HTMLDivElement>) {
@@ -16,7 +16,7 @@ export function Select() {
       onBlur={() => setIsSelectExpanded(false)}
     >
       <LanguageIcon />
-      <span>{value} </span>
+      <span className="language_value">{value} </span>
       <DownArrow setIsSelectExpanded={setIsSelectExpanded} />
       <Options
         isSelectExpanded={isSelectExpanded}

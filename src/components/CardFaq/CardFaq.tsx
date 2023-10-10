@@ -54,6 +54,10 @@ export function CardFaq() {
           e bloccare la visione di titoli specifici.
         </CardFaqElement>
       </div>
+      <h3>
+        Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o
+        riattivare il tuo abbonamento.
+      </h3>
       <EmailButton />
     </div>
   );

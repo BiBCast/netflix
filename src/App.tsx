@@ -1,8 +1,8 @@
 import { Banner } from "./components/Banner/Banner";
 import { Card } from "./components/Card/Card";
 import { CardFaq } from "./components/CardFaq/CardFaq";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
 import { Home } from "./components/Home/Home";
 import frontPage from "./components/assets/frontPage.jpg";
 import Tv from "./components/assets/tv.png";

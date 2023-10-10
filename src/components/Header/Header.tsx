@@ -1,13 +1,13 @@
-import { Select } from "./Select/Select";
-import { Logo } from "./assets/Logo";
-
+import { SelectLang } from "../SelectLang/SelectLang";
+import { Logo } from "../assets/Logo";
+import "./header.css";
 export function Header() {
   return (
     <div className="header">
       <div>
         <Logo />
         <div className="header__logic">
-          <Select />
+          <SelectLang />
           <button className="logic__signin" type="button">
             Accedi
           </button>

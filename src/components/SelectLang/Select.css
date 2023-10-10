@@ -5,10 +5,13 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
+  width: 10rem;
+  height: max-content;
   gap: 1rem;
   text-transform: capitalize;
 
   background: rgb(33, 39, 57);
+
   & > .language_spacer {
     padding-left: 0.5rem;
     width: fit-content;
