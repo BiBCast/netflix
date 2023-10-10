@@ -1,4 +1,4 @@
-import { CSSProperties, MouseEvent } from "react";
+import { CSSProperties } from "react";
 
 export function Options({
   isSelectExpanded,
