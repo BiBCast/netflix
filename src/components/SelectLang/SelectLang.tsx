@@ -6,7 +6,7 @@ import { useState } from "react";
 export function SelectLang() {
   const [isSelectExpanded, setIsSelectExpanded] = useState(false);
   const [value, setValue] = useState("italiano");
-  function handleOption(e: MouseEvent<HTMLDivElement>) {
+  function handleOption(e: React.MouseEvent<HTMLInputElement>) {
     setValue(e.currentTarget.innerText);
   }
   return (

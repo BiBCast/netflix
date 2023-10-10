@@ -5,7 +5,7 @@ export function Options({
   handleOption,
 }: {
   isSelectExpanded: boolean;
-  handleOption: (e: MouseEvent) => void;
+  handleOption: (e: React.MouseEvent<HTMLInputElement>) => void;
 }) {
   const styleOptions = {
     visibility: isSelectExpanded ? "visible" : "hidden",
